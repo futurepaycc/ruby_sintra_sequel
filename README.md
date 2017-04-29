@@ -15,3 +15,8 @@ items.insert(:name => 'abc', :age => 20)
 ```
 3. 运行程序
 ruby main.rb 或 vscode中F5(launch.json自动生成的)
+
+4. 客户端请求
+curl http://localhost:4567/
+curl --data "data=hello" http://localhost:4567/post
+curl -isv http://localhost:4567/person.json
